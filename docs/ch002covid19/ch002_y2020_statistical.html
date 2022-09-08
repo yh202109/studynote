@@ -1,0 +1,665 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Statistical Considerations (2020) &#8212; Study of Guidance (Public domain)</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/myfile-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dev for Treatment or Prevention (2020)" href="ch002_y2020_dev_trt_prevention.html" />
+    <link rel="prev" title="COVID-19" href="ch002_covid19.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Study of Guidance (Public domain)</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    About
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  News
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ch000news/news2022.html">
+   2022 (lst)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  TOPIC
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="ch002_covid19.html">
+   COVID-19
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Statistical Considerations (2020)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch002_y2020_dev_trt_prevention.html">
+     Dev for Treatment or Prevention (2020)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch102_y2020_dev_vaccine.html">
+     Vaccine Development (2020)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch102_y2022_eua_vaccine.html">
+     EUA Vaccine (2022)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch002_y2021_mAb.html">
+     mAb Targeting SARS-CoV-2 (2021)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch002_y2021_master_protocol.html">
+     Master Protocols (2021)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch003vaccine/ch003_vaccine.html">
+   Vaccine
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch003vaccine/ch003_y2007_pandemic_influenza.html">
+     Pandemic Influenza (2007)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/docs/ch002covid19/ch002_y2020_statistical.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/ch002covid19/ch002_y2020_statistical.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preface">
+   Preface
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#public-comment">
+     Public Comment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#i-introduction">
+   I. Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ii-background">
+   II. Background
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#iii-discussion">
+   III. Discussion
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-trial-integrity">
+     A. Trial Integrity
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-trial-mitigation-and-analysis-strategies">
+     B. Trial Mitigation and Analysis Strategies
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Statistical Considerations (2020)</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preface">
+   Preface
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#public-comment">
+     Public Comment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#i-introduction">
+   I. Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ii-background">
+   II. Background
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#iii-discussion">
+   III. Discussion
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-trial-integrity">
+     A. Trial Integrity
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-trial-mitigation-and-analysis-strategies">
+     B. Trial Mitigation and Analysis Strategies
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="statistical-considerations-2020">
+<h1>Statistical Considerations (2020)<a class="headerlink" href="#statistical-considerations-2020" title="Permalink to this headline">#</a></h1>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="kc">False</span><span class="p">):</span>
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;..&#39;</span><span class="p">)</span>
+    <span class="kn">import</span> <span class="nn">myutil.pdf2txt</span>
+    <span class="n">ns</span><span class="o">=</span><span class="s1">&#39;ch002_y2020_statistical&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">myutil</span><span class="o">.</span><span class="n">pdf2txt</span><span class="o">.</span><span class="n">fpdf2txt</span><span class="p">(</span><span class="n">ns</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">))</span> 
+<span class="k">else</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+    <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Markdown</span> <span class="k">as</span> <span class="n">md</span>
+    <span class="n">meta</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;Statistical Considerations for Clinical Trials During the COVID-19 Public Health Emergency&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Guidance for Industry&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;CDER&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="s1">&#39;CBER&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="s1">&#39;CDRH&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="s1">&#39;CVM&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="s1">&#39;https://www.fda.gov/media/139145/download&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="mi">2020</span><span class="p">,</span>
+        <span class="s1">&#39;keyword&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s1">&#39;covid&#39;</span><span class="p">,</span><span class="s1">&#39;statistical&#39;</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+
+<span class="n">md</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;- **</span><span class="si">{}</span><span class="s2">**: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">meta</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<ul class="simple">
+<li><p><strong>title</strong>: Statistical Considerations for Clinical Trials During the COVID-19 Public Health Emergency</p></li>
+<li><p><strong>target</strong>: Guidance for Industry</p></li>
+<li><p><strong>CDER</strong>: True</p></li>
+<li><p><strong>CBER</strong>: True</p></li>
+<li><p><strong>CDRH</strong>: True</p></li>
+<li><p><strong>CVM</strong>: True</p></li>
+<li><p><strong>url</strong>: https://www.fda.gov/media/139145/download</p></li>
+<li><p><strong>year</strong>: 2020</p></li>
+<li><p><strong>keyword</strong>: ['covid', 'statistical']</p></li>
+</ul>
+</div>
+</div>
+<section id="preface">
+<h2>Preface<a class="headerlink" href="#preface" title="Permalink to this headline">#</a></h2>
+<section id="public-comment">
+<h3>Public Comment<a class="headerlink" href="#public-comment" title="Permalink to this headline">#</a></h3>
+<p>This guidance is being issued to address the Coronavirus Disease 2019 (COVID-19) public health emergency. This guidance is being implemented without prior public comment because the Food and Drug Administration (FDA or Agency) has determined that prior public participation for this guidance is not feasible or appropriate (see section 701(h)(1)(C) of the Federal Food, Drug, and Cosmetic Act (FD&amp;C Act) (21 U.S.C. 371(h)(1)(C)) and 21 CFR 10.115(g)(2)). This guidance document is being implemented immediately, but it remains subject to comment in accordance with the Agency’s good guidance practices.  Comments may be submitted at any time for Agency consideration. Submit written comments to the Dockets Management Staff (HFA-305), Food and Drug Administration, 5630 Fishers Lane, Rm. 1061, Rockville, MD 20852. Submit electronic comments to <a class="reference external" href="https://www.regulations.gov">https://www.regulations.gov</a>. All comments should be identified with the docket number FDA-2020-D-1136 and complete title of the guidance in the request.  Additional Copies</p>
+<p>Table of Contents</p>
+<ul class="simple">
+<li><p>I. Introduction</p></li>
+<li><p>II. Background</p></li>
+<li><p>III. Discussion</p>
+<ul>
+<li><p>A. Trial Integrity</p></li>
+<li><p>B. Trial Mitigation and Analysis Strategies</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on this topic. It does not establish any rights for any person and is not binding on FDA or the public. You can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations. To discuss an alternative approach, contact the FDA staff or Office responsible for this guidance as listed on the title page.</p>
+</div>
+</section>
+</section>
+<section id="i-introduction">
+<h2>I. Introduction<a class="headerlink" href="#i-introduction" title="Permalink to this headline">#</a></h2>
+<p>FDA plays a critical role in protecting the United States from threats such as emerging infectious diseases, including the Coronavirus Disease 2019 (COVID-19) pandemic. FDA is committed to providing timely guidance to support response efforts to this pandemic.</p>
+<p>FDA is issuing this guidance to provide recommendations on statistical considerations to address the impact of COVID-19 on meeting trial objectives for clinical trials conducted during the duration of the COVID-19 public health emergency. The COVID-19 pandemic has impacted clinical development and ongoing clinical trials across investigational product areas. Public health measures to control the virus may impact the ability to collect data, for example, if trial participants are not able to visit clinical sites for endpoint assessments. The guidance outlines considerations for the statistical analysis of the primary and key secondary endpoints in a trial affected by COVID-19 to help ensure that the trial will provide interpretable findings with correct statistical quantification of uncertainty.</p>
+<p>This policy is intended to remain in effect only for the duration of the public health emergency related to COVID-19 declared by the Secretary of Health and Human Services (HHS) on January 31, 2020, effective January 27, 2020, including any renewals made by the HHS Secretary in accordance with section 319(a)(2) of the Public Health Service Act (PHS Act) (42 U.S.C. 247d(a)(2)).</p>
+<p>Given this public health emergency, and as discussed in the Notice in the Federal Register of March 25, 2020 (85 FR 16949), titled “Process for Making Available Guidance Documents Related to Coronavirus Disease 2019,” available at <a class="reference external" href="https://www.govinfo.gov/content/pkg/FR-2020-03-25/pdf/2020-06222.pdf">https://www.govinfo.gov/content/pkg/FR-2020-03-25/pdf/2020-06222.pdf</a>, this guidance is being implemented without prior public comment because FDA has determined that prior public participation for this guidance is not feasible or appropriate (see section 701(h)(1)(C) of the Federal Food, Drug, and Cosmetic Act (21 U.S.C. 371(h)(1)(C)) and 21 CFR 10.115(g)(2)). This guidance document is being implemented immediately, but it remains subject to comment in accordance with the Agency’s good guidance practices.</p>
+<p>In general, FDA’s guidance documents, including this guidance, do not establish legally enforceable responsibilities. Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only as recommendations, unless specific regulatory or statutory requirements are cited. The use of the word should in Agency guidance means that something is suggested or recommended, but not required.</p>
+</section>
+<section id="ii-background">
+<h2>II. Background<a class="headerlink" href="#ii-background" title="Permalink to this headline">#</a></h2>
+<p>There is currently an outbreak of respiratory disease caused by a novel coronavirus. The virus has been named “SARS-CoV-2” and the disease it causes has been named “Coronavirus Disease 2019” (COVID-19). On January 31, 2020, HHS issued a declaration of a public health emergency related to COVID-19 and mobilized the Operating Divisions of HHS. ^1 In addition, on March 13, 2020, the President declared a national emergency in response to COVID-19. ^2</p>
+<ul class="simple">
+<li><p>^1 Secretary of Health and Human Services Alex M. Azar, Determination that a Public Health Emergency Exists (Jan. 31, 2020, renewed April 21, 2020), available at <a class="reference external" href="https://www.phe.gov/emergency/news/healthactions/phe/Pages/default.aspx">https://www.phe.gov/emergency/news/healthactions/phe/Pages/default.aspx</a>.</p></li>
+<li><p>^2 Proclamation on Declaring a National Emergency Concerning the Novel Coronavirus Disease (COVID-19) Outbreak (Mar. 13, 2020), available at <a class="reference external" href="https://www.whitehouse.gov/presidential-actions/proclamation-declaring-national-emergency-concerning-novel-coronavirus-disease-covid-19-outbreak/">https://www.whitehouse.gov/presidential-actions/proclamation-declaring-national-emergency-concerning-novel-coronavirus-disease-covid-19-outbreak/</a>.</p></li>
+</ul>
+<p>FDA has issued guidance outlining general considerations on the conduct of clinical trials of medical products during the COVID-19 public health emergency ^3 (Conduct Guidance). ^4 The Conduct Guidance notes that the safety of trial participants is paramount and provides recommendations that may help sponsors mitigate the effects of the COVID-19 public health emergency on meeting the trial’s objectives, including recommendations related to documenting protocol deviations and methods of endpoint assessment. This guidance addresses statistical considerations for proposed changes to trial conduct that may impact the analysis and interpretation of the primary or key secondary endpoints in the trial. FDA recommends that sponsors consult with the relevant FDA review division when considering protocol changes and changes to the statistical analysis plan that may impact the analysis and interpretation of these endpoints.</p>
+<ul class="simple">
+<li><p>^3 Guidance for industry, investigators, and institutional review boards FDA Guidance on Conduct of Clinical Trials of Medical Products During COVID-19 Public Health Emergency (March 2020). We update guidances periodically. For the most recent version of a guidance, check the FDA web page titled “COVID-19-Related Guidance Documents for Industry, FDA Staff, and Other Stakeholders” available at <a class="reference external" href="https://www.fda.gov/emergency-preparedness-and-response/mcm-issues/covid-19-related-guidance-documents-industry-fda-staff-and-other-stakeholders">https://www.fda.gov/emergency-preparedness-and-response/mcm-issues/covid-19-related-guidance-documents-industry-fda-staff-and-other-stakeholders</a>, and the FDA web page titled “Search for FDA Guidance Documents,” available at <a class="reference external" href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents">https://www.fda.gov/regulatory-information/search-fda-guidance-documents</a>.</p></li>
+<li><p>^4 Although the Center for Veterinary Medicine (CVM) has not joined the Conduct Guidance, it has issued separate guidance explaining how the principles in the Conduct Guidance can be applied to clinical trials for animal drugs during the COVID-19 public health emergency. See CVM guidance for industry #270, Guidance on the Conduct and Review of Studies to Support New Animal Drug Development During the COVID-19 Public Health Emergency (April 2020), available at <a class="reference external" href="https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/covid-19-related-guidance-documents-industry-fda-staff-and-other-stakeholders">https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/covid-19-related-guidance-documents-industry-fda-staff-and-other-stakeholders</a>.</p></li>
+</ul>
+</section>
+<section id="iii-discussion">
+<h2>III. Discussion<a class="headerlink" href="#iii-discussion" title="Permalink to this headline">#</a></h2>
+<section id="a-trial-integrity">
+<h3>A. Trial Integrity<a class="headerlink" href="#a-trial-integrity" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>While prioritizing the safety of trial participants, sponsors should also proactively plan to address the impact of COVID-19 on the ability to meet the trial objectives. Modifications to the ascertainment of primary or key secondary endpoints would generally require a protocol amendment or an investigational device exemption (IDE) supplement. ^5 Modifications to the analysis of the primary or key secondary endpoints should be reflected in an updated statistical analysis plan before locking the database and before any modifications to unblinded interim analyses.</p>
+<ul>
+<li><p>^5 21 CFR 312.30 and 812.35.</p></li>
+</ul>
+</li>
+<li><p>When considering modifications to the trial to address the impact of COVID-19, sponsors should not propose any trial modifications based on data that may introduce bias into the interpretation of trial findings. Generally, for a blinded trial, modifications based on information that reveals the magnitude of the treatment effect or information presented by treatment arm have the potential to introduce bias. For example, stopping a trial before its planned duration based on knowledge of a treatment difference between arms from a previous interim analysis may introduce bias by stopping a trial close to a random high treatment estimate. Histograms and Kaplan-Meier plots may suggest treatment effect information and should be avoided. However, with appropriate safeguards for the integrity of the trial, such as the use of a Data Monitoring Committee, a trial may be stopped for the safety of the participants based on unblinded data.</p></li>
+<li><p>Appropriate participant data to consider when making modifications to the trial to address the impact of COVID-19 include summaries pooled over treatment arms including information on missing data, participant treatment discontinuation or interuptions, participant trial withdrawal, and endpoints. Information not specific to individual participants, such as information on site closures and disruption of the supply of investigational product, may also be appropriate to use when considering modifications to the trial.</p></li>
+</ul>
+</section>
+<section id="b-trial-mitigation-and-analysis-strategies">
+<h3>B. Trial Mitigation and Analysis Strategies<a class="headerlink" href="#b-trial-mitigation-and-analysis-strategies" title="Permalink to this headline">#</a></h3>
+<p>To address the impact of COVID-19 on evaluating the primary and key secondary endpoints of the trial, FDA provides considerations below for several design and analysis strategies. Multiple strategies may be needed to address the impact of COVID-19 adequately. These design and analysis strategies should be discussed with the relevant FDA review division.</p>
+<ul class="simple">
+<li><p>(1) As discussed in the Conduct Guidance, it is important to capture specific information at the participant level, describing the context and/or reasons for post-baseline events as they relate to COVID-19, such as discontinuation of treatment, withdrawal from the trial, use of alternative or rescue treatments, missed endpoint ascertainment, and the use of alternative endpoint ascertainment methods. This information may be useful for incorporating into analysis strategies to address potential biases or for performing sensitivity analyses related to the impact of COVID-19.</p></li>
+<li><p>(2) For sponsors considering stopping a trial and conducting a final analysis, a major consideration is the loss of statistical power from a smaller sample size or less follow-up time than was anticipated. For a blinded trial, a blinded power assessment could be conducted to estimate the power of the modified study. The assessment could use the actual event rates pooled over treatment arms or the observed variability pooled over treatment arms in the completed portion of the trial.</p></li>
+<li><p>(3) Stopping a trial earlier than planned or adding interim analyses to the trial may impact the statistical inference (e.g., p-values, confidence intervals). As stated above, any modification to the trial, including the original planned analyses, should not be based on data that reveal information on the treatment effect.</p>
+<ul>
+<li><p>(a) If a trial had no previous interim analyses and is stopped early, then using the originally planned statistical analysis may be appropriate for the statistical inference. The actual results may be less statistically significant or have a wider confidence interval than the trial was designed for because of reduced information (e.g., fewer endpoint events).</p></li>
+<li><p>(b) If a trial had no previous interim analyses, it may be possible to add a plan for interim analyses.</p></li>
+<li><p>(c) For a trial with a prospectively specified interim analysis plan, it may be possible to stop the trial earlier than planned or to add or modify an interim analysis and still maintain control over Type 1 error.</p></li>
+</ul>
+</li>
+<li><p>(4) A sponsor can consider increasing enrollment after the impact of COVID-19 has passed, as appropriate, over the originally planned enrollment to overcome the loss of information from the impact of COVID-19. Similary, a sponsor can consider extending follow-up to attain more events in an event driven trial. Sponsors should conduct sensitivity analyses examining differences in baseline characteristics and post-baseline events (including endpoints and adverse events) between the originally enrolled participants and the additional participants to understand the impact of the change in recruitment, including changes to recruitment locations and time of recruitment.</p></li>
+<li><p>(5) Sponsors should consider how to approach the analysis of data from participants who are missing endpoint ascertainment or the investigational product was interrupted because of COVID-19.</p>
+<ul>
+<li><p>(a) For a trial with sites closed for a period of time because of COVID-19, the missing endpoint ascertainments during this period may not necessarily be related to the treatment assignment or participant characteristics and outcomes. In this case, removing all participants from closed sites who were scheduled for an endpoint ascertainment from the analysis should not bias the findings. However, to avoid bias when using this approach, it is important to remove all the participants from the closed sites who were scheduled for the ascertainment, regardless of whether they had previously withdrawn-e.g., one should not impute values for those who would have had the endpoint ascertainment impacted by COVID-19 had they remained in the trial. For this approach, the exclusion of participants should not use post-baseline participant information but instead use only information at randomization. For example, all potentially impacted participants may be identified through the site location and randomization dates that are associated with endpoint ascertainment during the closure of the site. If a significant number of participants are affected, this strategy may result in a significant loss of information, and alternative endpoint ascertainment methods and definitions can be considered (see item (6) below) or the enrollment for the trial can potentially be increased (see item (4) above) to maintain statistical power.</p></li>
+<li><p>(b) Similarly, if the closure of a site for a certain period of time greatly impacts trial-specified treatment for participants such that it is unlikely that any treatment effect can be observed, then it may be reasonable to exclude participants who were impacted during that period of time. For example, if recently randomized participants are not able to obtain trial-specified treatment for an extended period of time for an investigational product whose hypothesized effect occurs only after sustained treatment, it may be reasonable to exclude from the analysis all participants potentially impacted. Again, the decision to exclude participants should not use post-baseline participant information (e.g., on-treatment time), but instead use baseline information (e.g., site location and randomization date). Such decisions should not be based on data that reveal treatment information and should be discussed with the FDA review division.</p></li>
+<li><p>(c) Other well-established methods for addressing missing information rely on leveraging available participant information at baseline and post-baseline, including COVID-19-related information (see item (1) above).</p></li>
+</ul>
+</li>
+<li><p>(6) Modifications to the definition and ascertainment of trial endpoints may be warranted to address the impact of COVID-19 on trial integrity and should be discussed with the relevant FDA review division. Some potential modifications include the following:</p>
+<ul>
+<li><p>(a) Using alternative ascertainment methods, such as replacing in-person endpoint ascertainment based on performance outcomes or interview-based clinician-reported outcomes with remote ascertainment (see question Q12 in the Appendix of the Conduct Guidance)</p></li>
+<li><p>(b) Extending the protocol-defined window of time for performing the endpoint ascertainment or using an earlier or later planned ascertainment</p></li>
+<li><p>(c) For a composite endpoint, including additional and clinically relevant components or removing components that cannot be ascertained</p></li>
+<li><p>(d) For a binary endpoint that is based on a continuous or ordinal measurement, using the continuous or ordinal measurement as the endpoint</p></li>
+</ul>
+</li>
+</ul>
+<p>The impact of any change in endpoint definition or ascertainment, either through a change in methods or a change in timing, should be carefully evaluated in sensitivity analyses. In particular, any differences in the ascertainment between trial arms or among participants with different baseline characteristics should be explored. For example, sensitivity analyses should stratify by the method and timing of the endpoint ascertainment.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "nbenv"
+        },
+        kernelOptions: {
+            kernelName: "nbenv",
+            path: "./ch002covid19"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'nbenv'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="ch002_covid19.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">COVID-19</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch002_y2020_dev_trt_prevention.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Dev for Treatment or Prevention (2020)</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Y. Hsu<br/>
+  
+      &copy; Copyright 2022.<br/>
+    <div class="extra_footer">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"></a> <BR> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a> <BR><BR> Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
