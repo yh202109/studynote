@@ -1,0 +1,902 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Master Protocols (2021) &#8212; Study of Guidance (Public domain)</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/.ipynb_checkpoints/myfile-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Vaccine" href="../ch003vaccine/ch003_vaccine.html" />
+    <link rel="prev" title="mAb Targeting SARS-CoV-2 (2021)" href="ch002_y2021_mAb.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Study of Guidance (Public domain)</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    About
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  News
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ch000news/news2022.html">
+   2022 (lst)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  TOPIC
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="ch002_covid19.html">
+   COVID-19
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch002_y2020_statistical.html">
+     Statistical Considerations (2020)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch002_y2020_dev_trt_prevention.html">
+     Dev for Treatment or Prevention (2020)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch102_y2020_dev_vaccine.html">
+     Vaccine Development (2020)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch102_y2022_eua_vaccine.html">
+     EUA Vaccine (2022)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch002_y2021_mAb.html">
+     mAb Targeting SARS-CoV-2 (2021)
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Master Protocols (2021)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch003vaccine/ch003_vaccine.html">
+   Vaccine
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch003vaccine/ch003_y2007_pandemic_influenza.html">
+     Pandemic Influenza (2007)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch010ich/ch010_ich.html">
+   ICH
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch010ich/ch010_ich_m10_y2019_bioanalytical_validation.html">
+     M10 (2006) BIOANALYTICAL VALIDATION
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  EMA
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ech001vaccine/che000_ema.html">
+   EMA Scientific Guidelines
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ech001vaccine/che001_y2017_immuno_protein.html">
+     Immunogenicity assessment (2017)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/docs/ch002covid19/ch002_y2021_master_protocol.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/ch002covid19/ch002_y2021_master_protocol.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Master Protocols (2021)
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preface">
+     Preface
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#public-comment">
+       Public Comment
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#i-introduction">
+   I. INTRODUCTION
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ii-background">
+     II. BACKGROUND
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iii-discussion">
+     III. DISCUSSION
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#a-guiding-principles">
+       A. Guiding Principles
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#b-trial-design-and-conduct-considerations">
+       B. Trial Design and Conduct Considerations
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#c-statistical-considerations">
+       C. Statistical Considerations
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#d-administrative-and-procedural-recommendations">
+       D. Administrative and Procedural Recommendations
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Master Protocols (2021)</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Master Protocols (2021)
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preface">
+     Preface
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#public-comment">
+       Public Comment
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#i-introduction">
+   I. INTRODUCTION
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ii-background">
+     II. BACKGROUND
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iii-discussion">
+     III. DISCUSSION
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#a-guiding-principles">
+       A. Guiding Principles
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#b-trial-design-and-conduct-considerations">
+       B. Trial Design and Conduct Considerations
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#c-statistical-considerations">
+       C. Statistical Considerations
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#d-administrative-and-procedural-recommendations">
+       D. Administrative and Procedural Recommendations
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="master-protocols-2021">
+<h1>Master Protocols (2021)<a class="headerlink" href="#master-protocols-2021" title="Permalink to this headline">#</a></h1>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="kc">False</span><span class="p">):</span>
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;..&#39;</span><span class="p">)</span>
+    <span class="kn">import</span> <span class="nn">myutil.pdf2txt</span>
+    <span class="n">ns</span><span class="o">=</span><span class="s1">&#39;ch002_y2021_master_protocol&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">myutil</span><span class="o">.</span><span class="n">pdf2txt</span><span class="o">.</span><span class="n">fpdf2txt</span><span class="p">(</span><span class="n">ns</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">))</span> 
+<span class="k">else</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+    <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Markdown</span> <span class="k">as</span> <span class="n">md</span>
+    <span class="n">meta</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;COVID-19: Master Protocols Evaluating Drugs and Biological Products for Treatment or Prevention&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Guidance for Industry&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;CDER&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="s1">&#39;https://www.fda.gov/media/148739/download&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="mi">2021</span><span class="p">,</span>
+        <span class="s1">&#39;keyword&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s1">&#39;statistical&#39;</span><span class="p">,</span> <span class="s1">&#39;master protocol&#39;</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+
+<span class="n">md</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;- **</span><span class="si">{}</span><span class="s2">**: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">meta</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<ul class="simple">
+<li><p><strong>title</strong>: COVID-19: Master Protocols Evaluating Drugs and Biological Products for Treatment or Prevention</p></li>
+<li><p><strong>target</strong>: Guidance for Industry</p></li>
+<li><p><strong>CDER</strong>: True</p></li>
+<li><p><strong>url</strong>: https://www.fda.gov/media/148739/download</p></li>
+<li><p><strong>year</strong>: 2021</p></li>
+<li><p><strong>keyword</strong>: ['statistical', 'master protocol']</p></li>
+</ul>
+</div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Study Note</p>
+<p>Reference:</p>
+<ul class="simple">
+<li><p>Master Protocols to Study Multiple Therapies, Multiple Diseases, or Both</p>
+<ul>
+<li><p>author: Janet Woodcoke, M.D., and Lisa M. Lavange, Ph D.</p></li>
+<li><p>journal: The new England Journal of Medicine</p></li>
+<li><p>year: 2017</p></li>
+</ul>
+</li>
+<li><p>Statistical considerations for a trial of Ebola virus disease therapeutics</p>
+<ul>
+<li><p>author: Michael A Proschan, Lori E Dodd and Dionne Price</p></li>
+<li><p>journal: Clinical Trials</p></li>
+<li><p>year: 2016</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="preface">
+<h2>Preface<a class="headerlink" href="#preface" title="Permalink to this headline">#</a></h2>
+<section id="public-comment">
+<h3>Public Comment<a class="headerlink" href="#public-comment" title="Permalink to this headline">#</a></h3>
+<p>This guidance is being issued to address the Coronavirus Disease 2019 (COVID-19) public health emergency. This guidance is being implemented without prior public comment because the Food and Drug Administration (FDA or Agency) has determined that prior public participation for this guidance is not feasible or appropriate (see section 701(h)(1)(C) of the Federal Food, Drug, and Cosmetic Act (FD&amp;C Act) (21 U.S.C. 371(h)(1)(C)) and 21 CFR 10.115(g)(2)). This guidance document is being implemented immediately, but it remains subject to comment in accordance with the Agency’s good guidance practices.</p>
+<p>Comments may be submitted at any time for Agency consideration. Submit written comments to the Dockets Management Staff (HFA-305), Food and Drug Administration, 5630 Fishers Lane, Rm. 1061, Rockville, MD 20852. Submit electronic comments to <a class="reference external" href="https://www.regulations.gov">https://www.regulations.gov</a>. All comments should be identified with the docket number FDA-2021-D-0409 and complete title of the guidance in the request</p>
+<p>TABLE OF CONTENTS</p>
+<ul class="simple">
+<li><p>I. INTRODUCTION</p></li>
+<li><p>II. BACKGROUND</p></li>
+<li><p>III. DISCUSSION</p>
+<ul>
+<li><p>A. Guiding Principles</p></li>
+<li><p>B. Trial Design and Conduct Considerations</p></li>
+<li><p>C. Stati stical Considerations</p></li>
+<li><p>D. Administrative and Procedural Recommendations</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on this topic.  It does not establish any rights for any person and is not binding on FDA or the public.  You can use an alternative approach if it satisfies the requirements of the applicable statutes an d regulations.  To discuss an alternative approach, contact the FDA office responsible for this guidance as listed on the title page.</p>
+</div>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="i-introduction">
+<h1>I. INTRODUCTION<a class="headerlink" href="#i-introduction" title="Permalink to this headline">#</a></h1>
+<p>FDA  plays a critical role in protecting the United States from threats such as emerging infectious diseases , including the Coronavirus Disease 2019 (COVID-19) pandemic. FDA is committed to providing timely guidance to support response efforts to this pandemic.</p>
+<p>FDA is issuing this guidance to  provide recommendations to sponsors  of master protocols  evaluating drugs  for the treatment or prevention of COVID-19.</p>
+<p>Given this public health emergency, and as discussed in the  Notice in the  Federal Register  of March 25, 2020, titled “Process for Making Available Guidance Documents Related to Coronavirus Disease 2019,” available at  <a class="reference external" href="https://www.govinfo.gov/content/pkg/FR-2020-03-25/pdf/2020-06222.pdf">https://www.govinfo.gov/content/pkg/FR-2020-03-25/pdf/2020-06222.pdf</a>, this guidance is being implemented without prior public comment because FDA has determined that prior public participation for this guidance is <strong>not feasible or appropriate</strong> (see section 701(h)(1)(C) of the Federal Food, Drug, and Cosmetic Act (FD&amp;C Act) (21 U.S.C. 371(h)(1)(C)) and 21 CFR 10.115(g)(2)). This guidance document is being implemented immediately, but it remains subject to comment in accordance with the Agency’s good guidance practices.</p>
+<ul class="simple">
+<li><p>^1 This guidance has been prepared by the Office of New Drugs  and the Office of Biostatistics  in the Center for Drug Evaluation and Research, the Center for Biologics Evaluation and Research , and the Oncology Center of Excellence at the Food and Drug Administration.</p></li>
+<li><p>^2 For the purposes of this guidance , master protocol  sponsor  refers to the person  or organization who takes responsibility for and initiates the master protocol. In many instances individual investigational drugs chosen for evaluation in the master protocol will also be evaluated under a separate  investigational new drug application (IND). For the purposes of this guidance, a sponsor responsible for the investigation of an individual drug evaluated under the separate  IND is referred to as the individual investigational drug sponsor. The master protocol sponsor and the individual investigational drug sponsor may or may not be the same entity.</p></li>
+<li><p>^3 For the purposes of this guidance, all references to drugs include both human drugs and biological products unless  otherwise specified.</p></li>
+</ul>
+<p>This guidance is intended to remain in effect for the duration of the public health emergency related to COVID-19 declared by the Department of Health and Human Services (HHS), including any renewals made by the Secretary in accordance with section 319(a)(2) of the Public Health Service Act (42 U.S.C. 247d(a)(2)). However, the recommendations and processes described in the guidance are expected to assist the Agency more broadly in its efforts to assist sponsors with the design of COVID-19 master protocols, including under circumstances out side of the COVID -19 public health emergency, and reflect the Agency’s current thinking on this issue. Therefore, within 60 days following the termination of the public health emergency, FDA intends to revise and replace this guidance with any appropriate changes based on comments received on this guidance and the Agency’s experience with implementation.</p>
+<p>The contents of this document do not have the force and effect of law and are not meant to bind the public in any way, unless specifically incorporated into a contract. This document is intended only to provide clarity to the public regarding existing requirements under the law. FDA guidance documents, including this guidance, should be viewed only as recommendations, unless specific regulatory or statutory requirements are cited. The use of the word should in Agency guidance means that something is suggested or recommended, but not required .</p>
+<section id="ii-background">
+<h2>II. BACKGROUND<a class="headerlink" href="#ii-background" title="Permalink to this headline">#</a></h2>
+<p>There is currently an outbreak of respiratory disease caused by a novel coronavirus. The virus has been named “SARS-CoV-2” and the disease it causes has been named “Coronavirus Disease 2019” (COVID-19). On January 31, 2020, HHS issued a declaration of a public health emergency related to COVID-19, effective January 27, 2020, and mobilized the Operating Divisions of HHS.^4 In addition, on March 13, 2020, there was a  Presidential  declaration  of a national emergency in response to COVID-19.^5    This guidance describes FDA’s current recommendations to sponsors of master protocols evaluating drugs for the treatment or prevention of COVID-19. ^6 For the purposes of this guidance, <span class='myhlc110'>a master protocol is defined as a protocol designed with <strong>multiple substudies</strong>, which may have different objectives and involve coordinated efforts to evaluate <strong>one or more investigational drugs</strong> in <strong>one or more disease subtypes</strong> within the overall trial structure</span>. ^7 Types of master protocols include <strong>umbrella trials, platform trials , and basket trials</strong>. ^8, ^9 This guidance primarily focuses on umbrella trials and platform trials, as these are of particular relevance to the current landscape of COVID-19 drug development. <strong>Umbrella trials</strong>  evaluate <strong>multiple therapies</strong> simultaneously for <strong>a single disease</strong>. <strong>Platform trials</strong> evaluate <strong>multiple therapies</strong> for <strong>a single disease in a perpetual manner, with therapies entering or leaving  the platform on the basis of a decision algorithm</strong>.</p>
+<ul class="simple">
+<li><p>^4 Secretary of Health and Human Services, Determination that  a Public Health Emergency Exists , (originally issued Jan. 31, 2020, and subsequently renewed), available at  <a class="reference external" href="https://www.phe.gov/emergency/news/healthactions/phe/Pages/default.aspx">https://www.phe.gov/emergency/news/healthactions/phe/Pages/default.aspx</a> .</p></li>
+<li><p>^5 Proclamation on Declaring a National Emergency Concerning the Novel Coronavirus Disease (COVID-19) Outbreak (Mar. 13, 2020), available at  <a class="reference external" href="https://trumpwhitehouse.archives.gov/presidential-actions/proclamation-declaring-national-emergency-concerning-novel-coronavirus-disease-covid-19-outbreak/">https://trumpwhitehouse.archives.gov/presidential-actions/proclamation-declaring-national-emergency-concerning-novel-coronavirus-disease-covid-19-outbreak/</a>. On February 24, 2021, there was a Presidential Declaration continuing the national emergency concerning the COVID-19 pandemic beyond March 1, 2021. See Continuation of the National Emergency Concerning the Coronavirus Disease  2019 (COVID -19) Pandemic (February 24, 2021), available  at <a class="reference external" href="https://www.federal">https://www.federal</a> <a class="reference external" href="http://register.gov/documents/2021/02/26/2021-04173/continuation-of-the-national-emergency-concerning-the-coronavirus-disease-2019-covid-19-pandemic">register.gov/documents/2021/02/26/2021-04173/continuation-of-the-national-emergency-concerning-the-coronavirus-disease-2019-covid-19-pandemic</a> .</p></li>
+<li><p>^6 Under 42 U.S.C. § 282(j), including its implementing regulations in 42 CFR part 11, certain applicable clinical trials must be registered at <a class="reference external" href="http://www.ClinicalTrials.gov">www.ClinicalTrials.gov</a>. Within one year of the primary completion date, with certain exceptions for submission beyond one year, responsible parties must submit required summary results information to <a class="reference external" href="http://www.ClinicalTrials.gov">www.ClinicalTrials.gov</a>. FDA encourages responsible parties to submit summary results information as soon as possible and ahead of required  statutory and  regulatory deadlines.</p></li>
+<li><p>^7 See also the draft guidance for industry Master Protocols: Efficient Clinical Trial Design Strategies to Expedite Development of Oncology Drugs and Biologics (September 2018). When final, this guidance will represent the FDA’s current thinking on this topic. For the most recent version of a guidance, check the FDA guidance web page at <a class="reference external" href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents">https://www.fda.gov/regulatory-information/search-fda-guidance-documents</a> .</p></li>
+<li><p>^8 Woodcock J, LaVange LM, 2017, Master Protocols to Study Multiple Therapies, Multiple Diseases, or Both, N Engl J Med , 377(1):62-70.</p></li>
+<li><p>^9 Basket trials study a single targeted therapy in the context of multiple diseases or disease subtypes.</p></li>
+</ul>
+<p>Well-designed and conducted master protocols can accelerate drug development by <strong>maximizing  the amount of information obtained from the research effort</strong>. Compared with conducting separate stand-alone trials, conducting an umbrella or platform trial can increase data quality and efficiency through shared infrastructure and can reduce overall ssample size through sharing of a control arm. These efficiencies are of particular importance in the setting of a public health emergency such as the current COVID-19 pandemic, where there  is a critical need for the efficient development of therapies. FDA expects master protocols to continue to play an important role in addressing the public health needs created by the current COVID-19 pandemic, as well as in future pandemics that might occur.</p>
+<p>This guidance primarily focuses on the design, conduct, and statistical considerations of master protocols intended to generate or contribute to substantial evidence of effectiveness and adequate characterization of safety  of drugs for the treatment or prevention of COVID-19. However, the principles  in the guidance  may also apply to master protocols generating proof of concept or dose-ranging data for  drugs  to treat or prevent COVID-19. Additionally, this guidance provides administrative and procedural recommendations to sponsors of master protocols for COVID-19 drugs. This guidance is intended to complement other COVID-19 guidances. ^10</p>
+<ul class="simple">
+<li><p>^10 See the guidances for industry COVID-19: Developing Drugs and Biological Products for Treatment or Prevention (February 2021), Emergency Use Authorization for Vaccines to Prevent COVID -19 (February 2021), Development and Licensure of Vaccines to Prevent COVID -19 (June 2020), Investigational COVID-19 Convalescent Plasma (February 2021), and Statistical Considerations for Clinical Trials During the COVID-19 Public Health Emergency (June 2020) and the guidance for industry and investigators COVID-19 Public Health Emergency: General Considerations for Pre -IND Meeting Requests for COVID -19 Related Drugs and Biological Products  (May 2020). We update guidances periodically.  To make sure you have the most recent version of a guidance, check the FDA guidance web page at <a class="reference external" href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents">https://www.fda.gov/regulatory-information/search-fda-guidance-documents</a>.</p></li>
+</ul>
+<p>Sponsors should also review  the <em>draft guidance for industry Master Protocols: Efficient Clinical Trial Design Strategies to Expedite Development of Oncology Drugs and Biologics</em>.^11 While not specific to COVID -19, general principles from the oncology master protocol guidance may also inform considerations of master protocols for COVID-19 drugs.</p>
+<ul class="simple">
+<li><p>^11 When final, this guidance will represent the FDA’s current thinking on this topic.</p></li>
+</ul>
+</section>
+<section id="iii-discussion">
+<h2>III. DISCUSSION<a class="headerlink" href="#iii-discussion" title="Permalink to this headline">#</a></h2>
+<section id="a-guiding-principles">
+<h3>A. Guiding Principles<a class="headerlink" href="#a-guiding-principles" title="Permalink to this headline">#</a></h3>
+<p>All sponsors developing drugs to treat or prevent COVID-19 should consider the following guiding principles when determining whether to conduct a master protocol or a stand-alone trial:</p>
+<ul class="simple">
+<li><p>Both master protocols and stand-alone trials have strengths and limitations including the following:</p>
+<ul>
+<li><p>As noted above, master protocols can accelerate drug development by maximizing the amount of information obtained and leveraging infrastructure to increase trial efficiency.</p></li>
+<li><p>Potential limitations of master protocols include their complexity, which necessitates a high degree of up-front planning and coordination.</p></li>
+<li><p>In contrast, a stand-alone trial may be easier to design and conduct; however, typically, fewer scientific questions can be addressed.</p></li>
+</ul>
+</li>
+<li><p>Given the different types of data that need to be generated during drug development  (e.g., proof of concept, dose-ranging, substantial evidence of effectiveness, safety data) a development program may include both master protocols and stand-alone trials.</p>
+<ul>
+<li><p>For all trials in the development program, a sponsor should clearly identify objectives to allow for the selection of an appropriate trial design.</p></li>
+<li><p>Sponsors should provide justification for the to -be-evaluated dose(s). This justification may require measurement of biological activity in applicable investigational products  (e.g., neutralizing antibody titers in convalescent plasma).</p></li>
+<li><p>In general, master protocols are not intended for first -in-human investigation.</p></li>
+</ul>
+</li>
+<li><p>Sponsors considering master protocols for the development of COVID-19 drugs should engage FDA early in their planning to determine the appropriateness of such approach es.</p></li>
+</ul>
+</section>
+<section id="b-trial-design-and-conduct-considerations">
+<h3>B. Trial Design and Conduct Considerations<a class="headerlink" href="#b-trial-design-and-conduct-considerations" title="Permalink to this headline">#</a></h3>
+<p>Master protocol sponsors evaluating drugs to treat or prevent COVID-19 should consider the following:</p>
+<ul class="simple">
+<li><p>A master protocol should include an <strong>appropriate randomized comparator arm</strong>. In the COVID-19 setting, a high potential exists for confounding when comparisons are made to participants ^12 who were <strong>not concurrently randomized</strong>  because of changes over time such as changes in the standard of care including background treatments and supportive care, circulating SARS-CoV-2, availability of health care resources, or the distribution of enrollment across trial sites and regions.</p>
+<ul>
+<li><p>^12 For the purposes of this guidance, participant refers to a person enrolled in a COVID-19 prevention or treatment trial.</p></li>
+</ul>
+</li>
+<li><p>Master protocol sponsors should seek  concurrence from the Agency before implementing a change where a drug evaluated under the master protocol is incorporated into the trial as either background therapy or a s part of the control arm . It is possible that a drug may be incorporated into the control arm but not as background therapy for all arms in situations where it would be inappropriate to add therapies together (e.g., similar mechanism of action).</p></li>
+<li><p>For master protocols evaluating multiple drugs, some participants  may not be eligible to receive a particular drug for safety reasons (e.g., diminished renal or liver function). In these situations, protocols should be designed to <strong>prevent participants from being randomized to drugs they are  not eligible to receive</strong>.</p></li>
+<li><p>Master protocol sponsors should make every effort to incorporate <strong>blinding</strong> into their trials. Sponsors should consider the following:</p>
+<ul>
+<li><p>In a placebo-controlled trial where investigational drugs  have multiple routes of administration or variable dosing schedules, blinding could be achieved through either of the following:</p>
+<ul>
+<li><p>A multiple -dummy design (e.g., for a master protocol with three investigational arms a participant will receive three placebos or one investigational drug  and two placebos, leading to complete blinding) or</p></li>
+<li><p>A distinct, blinded placebo control for each drug (e.g., for a master protocol with three investigational arms a  participant will receive one substance, either the investigational drug  randomized to or its matching placebo). In this case, the sponsor could randomize the participants to an intervention -specific subprotocol (among those they are eligible for) and then  randomize them to either that investigational drug or its matched placebo. Statistical comparisons between an investigational drug and placebo can include participants who were eligible to be randomized to the drug but were randomized to placebo groups for other interventions.</p></li>
+</ul>
+</li>
+<li><p>In trials where <strong>blinding is impractical</strong> , FDA strongly recommends an <strong>objective endpoint (e.g., all-cause mortality)</strong>.</p></li>
+</ul>
+</li>
+<li><p>In cases where drugs are intended to affect different aspects of the disease (e.g., anticoagulants , antivirals), there may be multiple intervention-specific endpoints. Master protocol sponsors should discuss  endpoint selection with the Agency , given the  potential for additional complexities in trial design, conduct, and analysis.</p></li>
+<li><p>Collection of <strong>safety data</strong> is important for novel drugs as well as repurposed drugs being evaluated for COVID-19, as the safety profile of repurposed drugs may differ in a new population. However, under certain circumstances and with the Agency’s concurrence, a selective approa ch to safety data collection for drugs with a well -characterized safety profile and low toxicity may be appropriate. ^13 The following should be considered when determining if selective safety data collection is appropriate:</p>
+<ul>
+<li><p>^13 See the guidances for industry COVID-19: Developing Drugs and Biological Products for Treatment or Prevention  (February 2021) and Determining the Extent of Safety Data Collection Needed in Late -Stage Premarket and Postapproval Clinical Investigations  (February 2016).</p></li>
+<li><p>The type of master protocol and drugs  expected to be evaluated may impact the approach to safety data collection. For example, in a master protocol with a shared control arm and selective safety data collection , if collection of additional safety data (which  are not being collected under the master protocol) is needed for a new drug in a subprotocol, the comparisons of that outcome could only utilize the subset of participants in the control group for whom the appropriate safety data were collected.</p></li>
+<li><p>Master protocol sponsors should provide justification to support a <strong>selective safety data approach</strong>, taking into account the safety profile of the drugs expected to be evaluated  as well as the role of the master protocol in adequately characterizing  safety  within the overall clinical development program .</p></li>
+<li><p>Master protocol sponsors are reminded that selective safety data collection does not alter <strong>safety reporting requirements</strong>. ^14</p>
+<ul>
+<li><p>^14 See 21 CFR 312.32 and 21 CFR 312.64(b). See  also  the guidance for industry and investigators Safety Reporting Requirements for INDs and BA/BE Studies (December 2012) and the draft guidance for industry Safety Assessment for IND Safety Reporting (December 2015). When final, this guidance will represent the FDA’s current thinking on this topic.</p></li>
+</ul>
+</li>
+<li><p>In trials with a selective approach to safety collection, where the data collect ed differs between treatment arms, sponsors should address the impact of such differences in their risk-based monitoring plans. ^15 This is because of  the increased potential for data collection errors  when the data collected differs between treatment arms.</p></li>
+<li><p>^15 See the guidance for industry Oversight of Clinical Investigations - A Risk -Based Approach to Monitoring  (August 2013).</p></li>
+</ul>
+</li>
+<li><p>Sponsors must  provide adequate oversight to ensure protection of the rights, safety, and welfare of subjects  enrolled in clinical trials  and to ensure the integrity of the data submitted to FDA. ^16 The added complexity of master protocols may increase the potential for protocol deviations impacting the safety and welfare of subjects and the data integrity of these trials. Accordingly, sponsors should take measures (e.g., training at a site level) to help reduce the likelihood of clinically significant protocol deviations from occurring when designing, implementing, and monitoring their trials. ^17</p>
+<ul>
+<li><p>^16 In general, 21 CFR part 312, subpart D (Responsibilities of Sponsors and Investigators).</p></li>
+<li><p>^17 See the guidance for industry Determining the Extent of Safety Data Collection Needed in Late-Stage Premarket and Postapproval Clinical Investigations  (February 2016).</p></li>
+</ul>
+</li>
+<li><p>Before involving any subjects in a clinical investigation under a master protocol, the investigator must obtain the legally effective informed consent of the subject or the subject’s  legally authorized representative. ^18</p>
+<ul>
+<li><p>^18 See 21 CFR 50.20. Per FDA regulations at 21 CFR 50.55, if a child is to be enrolled in a clinical investigation, the parent(s) or guardian must provide permission, with the assent of the child when appropriate.</p></li>
+</ul>
+</li>
+<li><p>FDA recommends the use of a central  institutional review board  to review the master protocol. ^19</p>
+<ul>
+<li><p>^19 See 21 CFR 56.114. Note that 56.114 does not reflect a legal requirement.</p></li>
+</ul>
+</li>
+<li><p>The master protocol sponsor should appoint an independent, external data monitoring committee or other appropriate independent entity structured to assess safety and efficacy. ^20</p>
+<ul>
+<li><p>^20 Master protocol sponsors should review the guidance for industry  COVID-19: Developing Drugs and Biological Products for Treatment or Prevention  (see section III. A. 2.) and  the guidance for clinical trial sponsors  Establishment and Operation of Clinical Trial Data Monitoring Committees  (March 2006) for additional information.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="c-statistical-considerations">
+<h3>C. Statistical Considerations<a class="headerlink" href="#c-statistical-considerations" title="Permalink to this headline">#</a></h3>
+<p>Master protocol sponsors evaluating drugs to treat or prevent COVID-19 should consider the following:</p>
+<ul class="simple">
+<li><p>Some master protocols can incorporate proposals for <strong>complex adaptive ^21 or Bayesian designs</strong>. Given the added complexity of these designs and that simulations are often required for a comprehensive evaluation of the operating characteristics , FDA strongly encourages master protocol  sponsors to discuss these plans  early with  the  Agency.</p>
+<ul>
+<li><p>^21 See the guidance for industry Adaptive Designs for  Clinical Trials of  Drugs and Biologics (November 2019).</p></li>
+</ul>
+</li>
+<li><p>Master protocol sponsors should base statistical analyses  for a given investigational drug  on comparisons against only  those control arm  participants who were concurrently randomized. Sponsors considering alternative approaches should seek concurrence from the Agency.</p></li>
+<li><p>If some participants are eligible for only some treatment arms in the trial, master protocol sponsors should base statistical analyses for a given treatment arm on comparisons against only those control arm participants  who were eligible for that treatment arm .</p></li>
+<li><p>If the  overall  <strong>randomization ratio</strong> to an investigational drug and its comparator <strong>changes</strong> during the trial, comparisons between the investigational drug and comparator group should <strong>account for time periods of different randomization ratios, such as by stratifying by the time period</strong>. The randomization ratio may change, for instance, if new investigational drugs are entered  over time  into trials with certain randomization schemes . For example, one randomization scheme could change the randomization ratio from 1:1:1 (control:Drug A:Drug B) to 2:1:1:1 (control:Drug A:Drug B:Drug C) when the third drug, Drug C, enters the trial.</p></li>
+<li><p>In umbrella or platform trials in the COVID-19 setting, sponsors <strong>do not need to perform multiplicity adjustments</strong> for  the multiple comparisons of different investigational drugs to the comparator group to ensure control of the overall familywise type I error rate. However, sponsor s should be aware  of the possibility of multiple correlated erroneous findings, and it is critical to incorporate <strong>additional considerations</strong>  (e.g., the clinical meaningfulness of the estimated effect; the quality of trial design and conduct; information from relevant external studies; results for other drugs studied under the master protocol, if available  and relevant) <strong>beyond the p-value from a single  comparison into the evaluation of the persuasiveness  of evidence supporting the effectiveness of a drug.</strong></p></li>
+<li><p>To reduce the risk of a <strong>poorly or highly performing control arm</strong> leading to <strong>multiple correlated erroneous findings</strong> in an umbrella or platform trial of multiple investigational drugs, sponsors can consider use of a randomization ratio other than equal allocation to have a <strong>greater proportion of participants in the control arm</strong>. Greater than  proportionate randomization to the control arm  may also <strong>increase overall power</strong> for a fixed total sample size.</p></li>
+<li><p>In some scenarios, <strong>dissemination of results for one</strong> investigational drug can lead to inadvertent dissemination of information about other drugs under ongoing evaluation in the trial, potentially affecting trial conduct and integrity. For example, in an event-driven trial , <strong>the fact that one drug has reached the target number of events for the final analysis</strong> could imply that other drugs still in the trial have had fewer events. Knowledge of accumulating data can affect the course and conduct of a trial, and the behavior of its sponsor, investigators, and participants, in ways that are <strong>difficult to predict and impossible to adjust for</strong>. Therefore, it is paramount that <strong>the analysis and communication of results for one investigational drug  not lead  to inadvertent  dissemination of information for other drugs</strong>.</p></li>
+<li><p>FDA does <strong>not require comparisons between investigational drugs  in an umbrella or platform trial</strong>, but the comparisons may be useful for comparative effectiveness research and informing treatment guidelines. Master protocol sponsors planning on conducting these comparisons should prespecify them in the  statistical analysis plan.</p></li>
+</ul>
+</section>
+<section id="d-administrative-and-procedural-recommendations">
+<h3>D. Administrative and Procedural Recommendations<a class="headerlink" href="#d-administrative-and-procedural-recommendations" title="Permalink to this headline">#</a></h3>
+<p>Master protocol sponsors evaluating drugs to treat or prevent COVID-19 should consider the following:</p>
+<ul class="simple">
+<li><p>A sponsor considering the submission of a master protocol  should request a pre-investigational new drug application (pre-IND) meeting to discuss the protocol and submission details. The cover letter for these meeting requests should clearly state “REQUEST FOR MEETING-MASTER PROTOCOL (Meeting Type).”</p></li>
+<li><p>The master protocol IND should include only the master protocol  and the master protocol should be conducted under that IND only .</p></li>
+<li><p>Regarding <strong>cross-references between INDs</strong>, sponsors should consider the following:</p>
+<ul>
+<li><p>The master protocol should not be incorporated into other INDs via cross-reference.</p></li>
+<li><p>INDs for individual investigational drugs ^22 being evaluated in a master protocol can cross-reference limited elements of the master protocol IND (e.g., clinical data).</p>
+<ul>
+<li><p>^22 In many instances individual investigational drugs chosen for evaluation in the master protocol will also be evaluated under a separate  IND. The master protocol sponsor and the individual investigational drug sponsor <strong>may or may not be the same entity</strong>. See also footnote 2.</p></li>
+</ul>
+</li>
+<li><p>The master protocol IND can reference information in the INDs for the individual investigational drugs to be evaluated in the master protocol  IND  to support the safety of those individual investigational drugs, such as nonclinical study findings , drug product quality specifications , and clinical data .</p></li>
+<li><p>To reference information in <strong>another</strong> sponsor’s IND, <strong>a letter from that sponsor authorizing such reference</strong> must be provided. ^23</p>
+<ul>
+<li><p>^23 21 CFR 312.23(b).</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>A new investigational drug ^24 proposed for evaluation in the master protocol should be <strong>submitted as a protocol amendment to the master protocol IND</strong>. <strong>All drugs to be evaluated in a master protocol are expected to have undergone previous clinical testing in humans and, therefore , to have a separate IND file</strong>. In rare cases where there may not be a separate IND for the drug (e.g., a drug developed solely outside of the United States), master protocol sponsors should consult FDA.</p>
+<ul>
+<li><p>^24 For purposes of this guidance, those not -previously -develop ed drugs are referred to as new investigational drugs.</p></li>
+</ul>
+</li>
+<li><p>FDA recommends the following procedures regarding protocol amendments:</p>
+<ul>
+<li><p>The master protocol sponsor should clearly mark the cover letter for protocol amendments with “Protocol Amendment -MASTE R PROTOCOL .”</p></li>
+<li><p>Master protocol sponsors should submit protocol amendments that substantively affect the safety, quality, or scope of the master protocol  at least 30 days before  initiation of the changes . For example, to add a new individual investigational drug to the master protocol, the  master protocol IND sponsor should submit  the protocol amendment at least 30 days before  initiation of that arm of the protocol.</p></li>
+<li><p>A sponsor should notify the regulatory project manager at least 48 hours before submitting any protocol amendment that  could  substantively affect the safety , quality, or scope of the master protocol .</p></li>
+</ul>
+</li>
+<li><p>FDA  recommends that master protocol sponsors review figure D  of the appendix  in the <em>draft guidance for industry  Master Protocols: Efficient Clinical Trial Design Strategies to Expedite Development of Oncology Drugs and Biologics</em> ^25 for an example  of the organization of an electronic common technical document  submission for a master protocol.</p>
+<ul>
+<li><p>^25 When final, this guidance will represent the FDA’s current thinking on this topic.</p></li>
+</ul>
+</li>
+<li><p>FDA recommends that the master protocol sponsor  ensure the dissemination of information and advice from FDA to the individual investigational drug  sponsor(s).</p></li>
+<li><p>The master protocol sponsor  should establish a systematic approach  that ensures the rapid communication of serious safety issues to clinical investigators and FDA  under IND safety reporting regulations. ^26 This should include a process for rapid implementation of protocol amendments to address serious safety issues. ^27</p>
+<ul>
+<li><p>^26 See 21 CFR 312.32.</p></li>
+<li><p>^27 See 21 CFR 312.30(b)(1) and 312.30(b)(2)(ii).</p></li>
+</ul>
+</li>
+<li><p>With regard to safety reporting, sponsors should be aware:</p>
+<ul>
+<li><p>All clinical investigators are required to submit safety reports to the master protocol sponsor. ^28</p>
+<ul>
+<li><p>^28 21 CFR 312.64(b)).</p></li>
+</ul>
+</li>
+<li><p>Master protocol sponsors are required to submit safety reports  to FDA and all participating investigators  when the sponsor determines that a serious adverse event is unexpected and there is a reasonable possibility that the drug caused the serious adverse event (i.e., there is evidence to suggest a causal relationship between the drug and the adverse event). ^29</p>
+<ul>
+<li><p>^29 21 CFR 312.32(c)(1). Sponsors are also required under 21 CFR 312.55(b) to keep each participating investigator informed of any new observations discovered or reported to the sponsor on the drug, particularly with respect to adverse events  and safe use.</p></li>
+</ul>
+</li>
+<li><p>FDA requests that the master protocol sponsor forward the initial safety report to the relevant individual investigational drug sponsor who is required to promptly review the information. ^30</p>
+<ul>
+<li><p>^30 21 CFR  312.32(b).</p></li>
+<li><p>The individual investigational drug sponsor  should review the report, add any relevant context or additional information, and submit a modified report to their active IND(s) for the investigational drug, if required, ^31 as a follow -up safety report that references the initial safety report ^32 submitted by the master protocol sponsor .</p>
+<ul>
+<li><p>^31 21 CFR 312.32(c)(1).</p></li>
+<li><p>^32 21 CFR 312.32(d).</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "nbenv"
+        },
+        kernelOptions: {
+            kernelName: "nbenv",
+            path: "./ch002covid19"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'nbenv'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="ch002_y2021_mAb.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">mAb Targeting SARS-CoV-2 (2021)</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../ch003vaccine/ch003_vaccine.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Vaccine</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Y. Hsu<br/>
+  
+      &copy; Copyright 2022.<br/>
+    <div class="extra_footer">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"></a> <BR> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a> <BR><BR> Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
